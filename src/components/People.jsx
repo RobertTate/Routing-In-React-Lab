@@ -26,7 +26,11 @@ class People extends Component {
     render() {
         return (
             <Fragment>
-                <h1>PEOPLE</h1>
+                <div className="container">
+                    <div className="jumbotron p-2">
+                        <h1>PEOPLE</h1>
+                    </div>
+                </div>
                 <div className="col">
                     {this.state.peoples.map((people) =>
                         <PeopleCard key={people.id} people={people} />

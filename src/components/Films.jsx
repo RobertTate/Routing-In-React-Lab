@@ -26,7 +26,11 @@ class Films extends Component {
     render() {
         return (
             <Fragment>
-                <h1>FILMS</h1>
+                <div className="container">
+                    <div className="jumbotron p-2">
+                        <h1>FILMS</h1>
+                    </div>
+                </div>
                 <div className="col">
                     {this.state.films.map((film) =>
                         <FilmCard key={film.id} film={film} />
